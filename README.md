@@ -1,7 +1,6 @@
- English Sentence Scrambler
- > #### ⚠ THIS PROGRAM MIGHT NOT BE A SAFE AND HAVE VULNERABLILITY SINCE I WROTE THIS PORGRAMM WHILE I'M LEARNING GOLANG.
+ # English Sentence Scrambler
+ ##### ⚠ THIS PROGRAM MIGHT NOT BE A SAFE AND HAVE VULNERABLILITY SINCE I WROTE THIS PORGRAMM WHILE I'M LEARNING GOLANG.
 =========================
-
 
 #### Introduction
 > + This Programm is for helping study and prepare school english test by randomly rearrange words in sentence that user entered.
