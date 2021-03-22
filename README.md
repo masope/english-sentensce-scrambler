@@ -1,5 +1,6 @@
  English Sentence Scrambler
 =========================
+⚠ THIS PROGRAM MIGHT NOT BE A SAFE AND HAVE VULNERABILITY.
 
 ## Introduction
 + This Program is for helping study and prepare school english test by randomly rearrange words in sentence that user entered.
