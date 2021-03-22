@@ -38,19 +38,35 @@ func WordsToStr(wordsArr []string) string {
 	return sentence
 }
 
+func EvaluateExit(value string) bool {
+	if value == "exit" || value == "0" {
+		return true
+	} else {
+		return false
+	}
+} //Do I Really Need This Function??
+
 func main() {
-	var TargetSentence string
-	var TranslatedSentence string
-
-	fmt.Print("영어 문장을 입력해 주세요 >> ")
-	StrStdInput(&TargetSentence)
-
-	fmt.Print("한글 문장을 입력해 주세요 >> ")
-	StrStdInput(&TranslatedSentence)
-
-	TargetWordsArr := strings.Fields(TargetSentence)
-	StrArrShuffle(TargetWordsArr)
-
-	ScrambledTargetSentence := WordsToStr(TargetWordsArr) 
-	fmt.Printf("%s\n%s", TranslatedSentence, ScrambledTargetSentence)
+	fmt.Println("Remember! : Enter \"exit\" or integer 0 to terminate the program.")
+	for ;; {
+		var TargetSentence string
+		var TranslatedSentence string
+	
+		fmt.Print("영어 문장을 입력해 주세요 >> ")
+		StrStdInput(&TargetSentence)
+		if EvaluateExit(TargetSentence) { break }
+	
+		fmt.Print("한글 문장을 입력해 주세요 >> ")
+		StrStdInput(&TranslatedSentence)
+		if EvaluateExit(TranslatedSentence) { break }
+	
+		TargetWordsArr := strings.Fields(TargetSentence)
+		StrArrShuffle(TargetWordsArr)
+	
+		ScrambledTargetSentence := WordsToStr(TargetWordsArr) 
+		fmt.Printf("%s\n%s", TranslatedSentence, ScrambledTargetSentence)
+	
+		
+		fmt.Printf("\n\n\n")
+	}
 }
